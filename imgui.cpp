@@ -10223,7 +10223,7 @@ static void ImGui::ErrorCheckEndFrameSanityChecks()
     IM_UNUSED(key_mods);
 
     // [EXPERIMENTAL] Recover from errors: You may call this yourself before EndFrame().
-    //ErrorCheckEndFrameRecover();
+    ErrorCheckEndFrameRecover(nullptr,nullptr);
 
     // Report when there is a mismatch of Begin/BeginChild vs End/EndChild calls. Important: Remember that the Begin/BeginChild API requires you
     // to always call End/EndChild even if Begin/BeginChild returns false! (this is unfortunately inconsistent with most other Begin* API).
